@@ -1,0 +1,35 @@
+
+header nav{
+    background-color: #bfdbea;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .avatar img{
+    margin-left: 20px;
+}
+nav .menu{
+    margin-right: 30px;
+}
+nav .menu ul li{
+    display: inline;
+    margin:0 30px;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: #1a519e;
+    font-weight: bold;
+}
+nav .menu button{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
