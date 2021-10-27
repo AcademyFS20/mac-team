@@ -1,0 +1,43 @@
+.haut{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.bas{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.image404{
+    margin-left: 21%;
+    margin-top: -50px;
+}
+
+.button{
+
+    width: 400px;
+    background-color: #1078ad;
+    color: white;
+    font-size: 32px;
+    border: none;
+    font-weight: bold;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.titre{
+    text-align: center;
+    color: #1078ad;
+    font-size: 50px;
+    font-weight: bold;
+}
+
