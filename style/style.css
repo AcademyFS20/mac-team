@@ -1,6 +1,14 @@
 /*
-blue light : #bfdbea
+
+colors{
+    blue light : #bfdbea;
+    yellow : #f4cf1b;
+    dark blue : #1078ad;
+
+}
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *,
 *::after,
 *::before{
@@ -12,4 +20,5 @@ blue light : #bfdbea
 
 html{
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
