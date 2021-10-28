@@ -62,7 +62,7 @@ nav .menu button{
 
 .button{
 
-    width: 400px;
+    width: 350px;
     background-color: #1078ad;
     color: white;
     font-size: 32px;
@@ -79,3 +79,95 @@ nav .menu button{
     font-weight: bold;
 }
 
+
+/*FOOTER*/
+footer{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+footer img{
+    display: block;
+    margin: 0 auto;
+}
+footer .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+footer .footer .parag, .navigation, .conract{
+    width: 30%;
+}
+.navigation ul li{
+    margin-left: 100px;
+    list-style: none;
+    margin-top: 30px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #1a519e;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navigation ul li input{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer .contact{
+    text-align: center;
+    line-height: 2;
+    font-size: 25px;
+}
+.footer .contact h3{
+    color: #1078ad;
+}
+.footer .nbrs{
+    color: green;
+    font-weight: bold
+}
+.footer .parag{
+    margin: auto auto;
+    line-height: 1.9;
+    color: gray;
+    font-size: 20px;
+    text-align: justify;
+}
+#fox{
+    width: 100%;
+    background-color: #1078ad;
+    height: 40px;
+}
+#fox h4{
+    color: white;
+    text-align: center;
+
+}
+
+/* BARRE FOOTER */
+
+#fox{
+    width: 100%;
+    background-color: #1078ad;
+    height: 40px;
+}
+#fox h4{
+    color: white;
+    text-align: center;
+
+}
+
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    
+    
+}

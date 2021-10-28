@@ -42,6 +42,7 @@ nav .menu button{
     flex-direction: row;
     justify-content: center;
     margin-top: 100px;
+    margin-left: 330px;
 }
 
 ul.progress_bar{
@@ -115,44 +116,69 @@ ul.progress_bar{
   }
   
 .texte{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
-    margin-top: 60px;
+    margin-top: 58px;
     margin-left: -22px;
 }
 
 
 
-/* PROGRESS BAR 2 */
 
-.barre2{
-    margin-top: 150px;
-    position: relative;
+/* AVANT-PROPOS*/
+
+.informations{
+    background-color: #96C5DC;
     display: flex;
-    flex-direction: row;
-    margin-left: 35%;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    text-align: center;
+    border-radius: 10px;
+
 }
 
+.titletext{
+    color: #1078AD;
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 0px ;
 
-.barre-grise{
-    background-color: #E8F1F7;
-    height: 25px;
-    width: 500px;
-    border-radius: 20px;
-    position: relative;
+}
+.line{
+    width: 400px;
+    background-color: #f0cf4b;
+    height: 2px;
+    border-color: transparent;
 }
 
-.barre-skill{
-    background-color: #3278a9;
-    position: absolute;
-    align-items: left;
-    border-radius: 20px;
-    height: 25px;
-    width: 50px;
-    z-index: 10;
+.demarrer{
+    margin-top: 50px;
+    text-align: center;
 }
 
+.button{
 
+    width: 350px;
+    background-color: #1078ad;
+    color: white;
+    font-size: 32px;
+    border: none;
+    font-weight: bold;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.infotext{
+    font-size: 20px;
+    line-height: 27px;
+    margin: 15px 15px 15px 15px;
+}
 
 /* RECOMMENDATIONS */
 #recommandations{
@@ -237,4 +263,98 @@ ul.progress_bar{
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+}
+
+
+/*FOOTER*/
+footer{
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+footer img{
+    display: block;
+    margin: 0 auto;
+}
+footer .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+footer .footer .parag, .navigation, .conract{
+    width: 30%;
+}
+.navigation ul li{
+    margin-left: 100px;
+    list-style: none;
+    margin-top: 30px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #1a519e;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navigation ul li input{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer .contact{
+    text-align: center;
+    line-height: 2;
+    font-size: 25px;
+}
+.footer .contact h3{
+    color: #1078ad;
+}
+.footer .nbrs{
+    color: green;
+    font-weight: bold
+}
+.footer .parag{
+    margin: auto auto;
+    line-height: 1.9;
+    color: gray;
+    font-size: 20px;
+    text-align: justify;
+}
+#fox{
+    width: 100%;
+    background-color: #1078ad;
+    height: 40px;
+}
+#fox h4{
+    color: white;
+    text-align: center;
+
+}
+
+/* BARRE FOOTER */
+
+#fox{
+    width: 100%;
+    background-color: #1078ad;
+    height: 40px;
+}
+#fox h4{
+    color: white;
+    text-align: center;
+
+}
+
+
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 575px){
+
+
+
+    
 }
