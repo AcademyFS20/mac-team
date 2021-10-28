@@ -35,6 +35,19 @@ nav .menu button{
     cursor: pointer;
 }
 
+nav .menu input{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 
 /* PROGRESS BAR */
 .barre{
@@ -125,7 +138,7 @@ ul.progress_bar{
 
 
 
-/* AVANT-PROPOS*/
+/* PREAMBULE */
 
 .informations{
     background-color: #96C5DC;
@@ -352,9 +365,149 @@ footer .footer .parag, .navigation, .conract{
 
 /*RESPONSIVE*/
 
-@media only screen and (max-width: 575px){
+@media screen and (min-width: 320px) and (max-width: 425px){
 
+    .barre{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 100px;
+     
+    }
 
-
+    ul.progress_bar{
+        max-width: 30em;
+        width: 100%;
+        padding: 0 18px;
+        height: 2em;
+        margin: 0;
+        padding: 0;
+        font-size: 17px;
+      }
+      
+      ul.progress_bar li{
+        width: 25%;
+        float: left;
+        height: 100%;
+        list-style: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+      
+      ul.progress_bar li span{
+        position: absolute;
+        display: block;
+        top: -16px;
+        bottom: 0;
+        left: 12px;
+        right: 0;
+        margin: auto;
+        background: #2a6339;
+        height: .4em;
+        z-index: 1;
+        width: 120%;
+      }
+      
+      ul.progress_bar li.activated:before{
+        background: #f0cf4b;
+        border: 0.3em solid #91b6d0;
+        box-sizing: border-box;
+        width: 40px;
+        left: -10px;
+        height: 40px;
+        top: -16px;
+        border-width: 12px;
     
+      }
+      
+      
+      ul.progress_bar li:before{
+          content: '';
+          display: block;
+          position: absolute;
+          left: 10px;
+          top: 0;
+          background: #3278a9;
+          width: 1em;
+          height: 1em;
+          border-radius: 2em;
+          z-index: 2;
+      }
+      
+      ul.progress_bar li:last-child:after{
+          content: '';
+          display: block;
+          position: absolute;
+          right: -2em;
+          top: 0;
+          width: 2em;
+          height: 2em;
+          border-radius: 2em;
+          z-index: 2;
+      }
+      
+    .texte{
+        font-size: 8px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-left: -10px;
+    }
+
+    .informations{
+        background-color: #96C5DC;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        text-align: center;
+        border-radius: 10px;
+    
+    }
+
+    .titletext{
+        color: #1078AD;
+        font-size: 23px;
+        margin-top: 15px;
+        margin-bottom: 0px ;
+    
+    }
+    .line{
+        width: 200px;
+        background-color: #f0cf4b;
+        height: 3px;
+        border-color: transparent;
+    }
+    
+    .demarrer{
+        margin-top: 50px;
+        text-align: center;
+    }
+    
+    .button{
+    
+        width: 270px;
+        background-color: #1078ad;
+        color: white;
+        font-size: 25px;
+        border: none;
+        font-weight: bold;
+        height: 60px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+    .infotext{
+        font-size: 14px;
+        line-height: 20px;
+
+    }
+    
+
+
 }
+
+
+
+

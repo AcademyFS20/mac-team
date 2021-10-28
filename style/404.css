@@ -36,6 +36,19 @@ nav .menu button{
     cursor: pointer;
 }
 
+nav .menu input{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
 /* SECTION  */
 .haut{
     display: flex;
@@ -168,6 +181,44 @@ footer .footer .parag, .navigation, .conract{
 /*RESPONSIVE*/
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
+    .image404 {
+        width: 100%;
+        margin-left: 0;
+    }
+
     
+    .titre{
+        font-size: 30px;
+       
+    }
     
+    .button{
+        width: 200px;
+        font-size: 20px;
+        height: 50px;
+    }
+
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 1023px){
+
+    .image404 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    
+    .titre{
+        font-size: 40px;
+       
+    }
+    
+    .button{
+        width: 280px;
+        font-size: 25px;
+        height: 65px;
+    }
+
+
 }
