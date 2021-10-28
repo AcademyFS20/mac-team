@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *,
 *::after,
-*::before{
-
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html{
-    font-size: 18px;
+html {
+    font-size: 62.5%;
 }
