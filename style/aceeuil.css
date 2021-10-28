@@ -17,12 +17,13 @@ nav .menu ul li{
     display: inline;
     margin:0 30px;
 }
+
 nav .menu ul li a{
     text-decoration: none;
     color: #1a519e;
     font-weight: bold;
 }
-nav .menu button{
+nav .menu input{
     outline: none;
     background: none;
     border: none;
@@ -32,4 +33,243 @@ nav .menu button{
     padding: 8px;
     border-radius: 10px;
     cursor: pointer;
+}
+header .info{
+    background-color:#f4cf1b;
+    text-align: center;
+    padding: 10px 0;
+}
+header .info p{
+    color: #1a519e;
+    line-height: 1.7;
+}
+#accueil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    min-height: 600px;
+}
+#accueil .doctor{
+    width: 50%;
+}
+#accueil .covid-test{
+    width: 50%;
+    
+}
+#accueil .covid-test h1{
+    color: #1078ad;
+    text-align: center;
+    font-size: 33px;
+    line-height: 1.5;
+}
+#accueil .covid-test img{
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+#accueil .covid-test ul{
+    margin-top: 30px;
+}
+#accueil .covid-test ul li{
+    list-style: none;
+    color: gray;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.7;
+    font-weight: bold;
+}
+#accueil .covid-test button{
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    outline: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    background-color: #1078ad;
+    width: 70%;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    font-weight: bold;
+}
+#symptomes{
+    min-height: 600px;
+    width: 100%;
+    margin-top: 100px;
+}
+#symptomes h1{
+    color: #1078ad;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.symptomes-item{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+    margin-top: 30px;
+    
+}
+.symptomes-item div{
+    margin: 0 100px;
+    text-align: center;
+}
+.symptomes-item div h3{
+    margin-top: 10px;
+    font-size: 25px;
+}
+#recommandations{
+    width: 100%;
+    min-height: 600px;
+    background-color: #1078ad;
+    margin-top: 100px;
+    padding-top: 40px;
+}
+#recommandations #titel{
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: gainsboro;
+}
+#recommandations .recomds{
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#recommandations .recomds-item{
+    width: 50%;
+}
+.recomds-item #back{
+    color: black;
+}
+.recomds-item p{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-left: 50px;
+}
+.recomds-item h2{
+    color: #f4cf1b;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+}
+.recomds-item #number{
+    color: #1078ad;
+    background-color: #f4cf1b;
+    width: 255px;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+.recomds-item .sante a{
+   color: white;
+   font-size: 28px;
+   text-decoration-color: #f4cf1b;
+   text-underline-offset: 3px;
+}
+.test-reminder{
+    background-color: #bfdbea;
+    min-height: 300px;
+    width: 100%;
+}
+.test-reminder h1{
+    text-align: center;
+    color: #1078ad;
+    padding-top: 30px;
+    font-size: 33px;
+}
+.test-reminder img, button{
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+.test-reminder button{
+    outline: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    background-color: #1078ad;
+    width: 50%;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+footer{
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+footer img{
+    display: block;
+    margin: 0 auto;
+}
+footer .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+}
+footer .footer .parag, .navigation, .conract{
+    width: 30%;
+}
+.navigation ul li{
+    margin-left: 100px;
+    list-style: none;
+    margin-top: 30px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #1a519e;
+    font-weight: bold;
+    font-size: 25px;
+}
+.navigation ul li input{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.footer .contact{
+    text-align: center;
+    line-height: 2;
+    font-size: 25px;
+}
+.footer .contact h3{
+    color: #1078ad;
+}
+.footer .nbrs{
+    color: green;
+    font-weight: bold
+}
+.footer .parag{
+    margin: auto auto;
+    line-height: 1.9;
+    color: gray;
+    font-size: 20px;
+    text-align: justify;
+}
+#fox{
+    width: 100%;
+    background-color: #1078ad;
+    height: 40px;
+}
+#fox h4{
+    color: white;
+    text-align: center;
+    
 }

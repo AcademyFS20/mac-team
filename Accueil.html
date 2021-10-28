@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#">Conseil</a></li>
                 <li><a href="#">Accueil</a></li>
-                <li><button>English</button></li>
+                <li><input type="button" id="lang" value="English"></li>
             </ul>
         </div>
         </nav>
@@ -42,6 +42,7 @@
         <div class="covid-test">
             <h1>Vous pensez avoir ete expose au</h1>
             <h1>Coronavirus COVID-19 et avez des symptomes?</h1>
+            <img src="assets/1f637.svg">
             <ul>
                 <li>Je reste vigilant ?</li>
                 <li>Je programme une teleconsultation ?</li>
@@ -87,10 +88,10 @@
 
 
     <section id="recommandations">
-        <h1>Recommandations officielles</h1>
+        <h1 id="titel">Recommandations officielles</h1>
         <div class="recomds">
             <div class="recomds-item">
-                <p>Si vous pensez etre malade,</p>
+                <p id="back">Si vous pensez etre malade,</p>
                 <p>evitez les endroits pulics.</p>
                 <p>Ne rendez pas visite aux personnes fragiles.</p>
                 <p>Evitez de sortir de chez vous.</p>
@@ -101,8 +102,10 @@
 
             <div class="recomds-item">
                 <h2>Appelle Gratuit</h2>
-                <h2>080 100 47 47</h2>
+                <h2 id="number">080 100 47 47</h2>
+                <h2 class="sante">
                 <a href="#">www.sante.gov.ma</a>
+                </h2>
             </div>
         </div>
         <div class="test-reminder">
@@ -119,15 +122,15 @@
                 <ul>
                     <li><a href="#">Conseil</a></li>
                     <li><a href="#">Accueil</a></li>
-                    <li><button>English</button></li>
+                    <li><input type="button" value="English"></li>
                 </ul>
             </div>
             <div class="contact">
                 <h3>Contact utiles</h3>
                 <p>Chiffre economique "Alo epidemie vigilance"</p>
-                <p>080 100 47 47</p>
+                <p class="nbrs">080 100 47 47</p>
                 <p>Aide medicale urgente</p>
-                <p>114</p>
+                <p class="nbrs">114</p>
             </div>
             <div class="parag">
                 <p>Algorithme d'orientation mis a jour sur les recommandations en vigueur
@@ -137,7 +140,11 @@
                 </p>
             </div>
         </div>
+        
     </footer>
+    <div id="fox">
+        <h4><marquee>Realiser par Nasserdine El Aatttari &copy; 2022</marquee></h4>
+    </div>
     <script src="javascript/accueil.js"></script>
 </body>
 </html>
