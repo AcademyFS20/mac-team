@@ -1,0 +1,240 @@
+
+/*HEADER*/
+header nav{
+    background-color: #bfdbea;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .avatar img{
+    margin-left: 20px;
+}
+nav .menu{
+    margin-right: 30px;
+}
+nav .menu ul li{
+    display: inline;
+    margin:0 30px;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    color: #1a519e;
+    font-weight: bold;
+}
+nav .menu button{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* PROGRESS BAR */
+.barre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+ul.progress_bar{
+    max-width: 45em;
+    width: 100%;
+    padding: 0 18px;
+    height: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+  }
+  
+  ul.progress_bar li{
+    width: 25%;
+    float: left;
+    height: 100%;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.progress_bar li span{
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #2a6339;
+    height: .4em;
+    z-index: 1;
+  }
+  
+  ul.progress_bar li.activated:before{
+    background: #f0cf4b;
+    border: 0.3em solid #91b6d0;
+    box-sizing: border-box;
+    width: 4em;
+    height: 4em;
+    top: -16px;
+    border-width: 26px;
+
+  }
+  
+  
+  ul.progress_bar li:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #3278a9;
+      width: 2em;
+      height: 2em;
+      border-radius: 2em;
+      z-index: 2;
+  }
+  
+  ul.progress_bar li:last-child:after{
+      content: '';
+      display: block;
+      position: absolute;
+      right: -2em;
+      top: 0;
+      width: 2em;
+      height: 2em;
+      border-radius: 2em;
+      z-index: 2;
+  }
+  
+.texte{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-left: -22px;
+}
+
+
+
+/* PROGRESS BAR 2 */
+
+.barre2{
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+}
+
+
+.barre-grise{
+    background-color: #E8F1F7;
+    height: 25px;
+    width: 500px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.barre-skill{
+    background-color: #3278a9;
+    position: absolute;
+    align-items: left;
+    border-radius: 20px;
+    height: 25px;
+    width: 50px;
+    z-index: 10;
+}
+
+
+
+/* RECOMMENDATIONS */
+#recommandations{
+    width: 100%;
+    min-width: 600px;
+    background-color: #1078ad;
+    margin-top: 100px;
+    padding-top: 40px;
+}
+#recommandations #titel{
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: gainsboro;
+}
+#recommandations .recomds{
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#recommandations .recomds-item{
+    width: 50%;
+}
+.recomds-item #back{
+    color: black;
+}
+.recomds-item p{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-left: 50px;
+}
+.recomds-item h2{
+    color: #f4cf1b;
+    font-size: 33px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: center;
+}
+.recomds-item #number{
+    color: #1078ad;
+    background-color: #f4cf1b;
+    width: 255px;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+.recomds-item .sante a{
+   color: white;
+   font-size: 28px;
+   text-decoration-color: #f4cf1b;
+   text-underline-offset: 3px;
+}
+.test-reminder{
+    background-color: #bfdbea;
+    min-height: 300px;
+    width: 100%;
+}
+.test-reminder h1{
+    text-align: center;
+    color: #1078ad;
+    padding-top: 30px;
+    font-size: 33px;
+}
+.test-reminder img, button{
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+}
+.test-reminder button{
+    outline: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    background-color: #1078ad;
+    width: 50%;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
