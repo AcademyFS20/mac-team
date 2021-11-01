@@ -58,11 +58,7 @@
         text-align: center;
         font-size: 20px;
         margin: 0 3px;
-<<<<<<< HEAD
-        
-=======
 
->>>>>>> Marouane
     }
     .recomds-item h2 {
         font-size: 22px;
@@ -114,8 +110,6 @@
     footer .footer .navigation{
         margin: auto 0;
     }
-<<<<<<< HEAD
-=======
 } 
 
 
@@ -144,7 +138,3 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
->>>>>>> Marouane
-}
