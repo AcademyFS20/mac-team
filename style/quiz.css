@@ -744,3 +744,48 @@ footer .footer .parag,
     text-align: center;
     border-radius: 10px;
 }
+.start{
+    display: none;
+}
+.dispalyit{
+    display: none;
+}
+
+
+.left::before{
+    left: 0 !important;
+}
+.btns{
+    margin: 0 30px;
+}
+.questions{
+    display: none;
+}
+.les_qsts{
+    width: 100%;
+    margin-top: 70px;
+    height: 300px;
+}
+#text_qsts{
+    text-align: center;
+    color: gray;
+    font-size: 35px;
+}
+#deg{
+    border: none;
+    background: none;
+    outline: none;
+    border: 2px solid #1078ad;
+    width: 230px;
+    height: 50px;
+    border-radius: 6px;
+}
+#inpt{
+    margin-top: 160px;
+    margin: 100px auto;
+    width: 17%;
+}
+#inpt label{
+    color: #1078AD;
+    font-size: 30px;
+}

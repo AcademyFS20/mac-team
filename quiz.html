@@ -32,12 +32,26 @@
 
     <section>
 
-        <div class="barre">
+        <div class="barre" id="infos">
             <ul class="progress_bar">
                 <li class='activated'>
                     <p class="texte"> Informations </p> <span class="spane"></span></li>
                 <li class='second'>
                     <p class="texte"> Questionnaire </p> <span class="span"> </span></li>
+                <li class='last'>
+                    <p class="texte"> Résultats </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="barre start">
+            <ul class="progress_bar">
+                <li class='second' id="les_infos">
+                    <p class="texte"> Informations </p> <span class="spane"></span>
+                </li>
+                <li class='activated'>
+                    <p class="texte"> Questionnaire </p> <span class="span"> </span>
+                </li>
                 <li class='last'>
                     <p class="texte"> Résultats </p>
                 </li>
@@ -65,8 +79,16 @@
             </p>
 
         </div>
-        <div class="demarrer">
+        <div class="les_qsts start">
+            
+        </div>
+        <div class="demarrer begin">
             <input class="button" type="button" value="Démarrer le test" />
+        </div>
+
+        <div class="demarrer questions">
+            <input class="button btns" type="button" value="Question précédente" />
+            <input class="button btns" type="button" value="Question suivante" />
         </div>
 
     </section>
