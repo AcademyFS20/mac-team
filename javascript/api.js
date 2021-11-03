@@ -17,8 +17,24 @@ console.error(error.message)
 window.addEventListener("DOMContentLoaded", async () =>{
     let select = document.querySelector(".select");
     const data = await getData(contries);
-    const confirmCases = await getData(endpointWorld);
-    console.log(confirmCases);
+  const dataCountries = await getData(endpointWorld);
+
+  const {Countries} = dataCountries;
+  
+  let DataCountries = Countries.map((item) =>{
+
+       return {country:item.Country,totalConfirmed : item.TotalConfirmed,newConfirmed:item.NewConfirmed};
+  })
+
+    let CountryM = data.filter((item) => {
+
+        if(item.Country === 'Morocco')
+        {
+            return item;
+        }
+    })
+
+  
     
     let CountryData = data.map(item => {
            return item.Country;
@@ -30,4 +46,18 @@ window.addEventListener("DOMContentLoaded", async () =>{
         select.appendChild(option)   
         
     });
+
+    console.log(DataCountries);
+    const options = [...document.querySelectorAll('option')];
+    options[0].innerText = CountryM[0].Country;
+
+    DataCountries.forEach(item => {
+
+      if(item.country === options[0].innerText) {
+         
+           const text = document.querySelector('.title');
+           text.innerHTML = item.totalConfirmed;
+           document.querySelector('.death').innerHTML = item.newConfirmed;
+      }
+    })
 });
