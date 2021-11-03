@@ -151,7 +151,7 @@ ul.progress_bar li:last-child:after {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 100px;*/
-    margin: 50px auto;
+    margin: 50px 10px;
     text-align: center;
     border-radius: 10px;
 }
@@ -788,4 +788,37 @@ footer .footer .parag,
 #inpt label{
     color: #1078AD;
     font-size: 30px;
+    margin-left: 30px;
+}
+#secbarre{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#myProgress {
+    margin-top: 50px;
+    width: 37%;
+    background-color: #91b6d0;
+    display: flex;
+}
+
+#myBar {
+    width: calc(100%/23);
+    height: 23px;
+    background-color: #1078ad;
+}
+
+.myProgress{
+    display: none;
+} 
+
+.myProgress2{
+    margin-top: 48px;
+    margin-left: 10px;
 }
