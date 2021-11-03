@@ -1,0 +1,107 @@
+body{
+    background-image: url(../assets/corona.png);
+}
+header nav{
+    background-color: #bfdbea;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .avatar img{
+    margin-left: 20px;
+}
+nav .menu{
+    margin-right: 30px;
+}
+nav .menu ul li{
+    display: inline;
+    margin:0 30px;
+}
+
+nav .menu ul li a{
+    text-decoration: none;
+    color: #1a519e;
+    font-weight: bold;
+}
+nav .menu input{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #1a519e;
+    border: 1.5px solid #1a519e;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#corona{
+    width: 80%;
+    height: 600px;
+    background-color: white;
+    opacity: 0.8;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 5px 7px 8px 7px #888888;
+}
+#corona h1{
+    text-align: center;
+    color: gray;
+    padding-top: 30px;
+}
+#corona .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.total-cases{
+    background-color: #FFA501;
+    padding: 30px;
+    width: 30%;
+    height: 150px;
+    margin-top: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 2px 6px 2px #888888;
+}
+.total-death{
+    background-color: red;
+    width: 30%;
+    padding: 30px;
+    height: 150px;
+    margin-top: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 2px 6px 2px #888888;
+}
+.total-recovery{
+    background-color: #0de30d;
+    width: 30%;
+    padding: 30px;
+    height: 150px;
+    margin-top: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 2px 6px 2px #888888;
+}
+.date{
+    background-color: #bfdbea;
+    width: 30%;
+    padding: 30px;
+    margin-top: 100px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 2px 6px 2px #888888;
+}
+.total-recovery:hover,.total-death:hover,.total-cases:hover,.date:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.3s ease-in-out;
+}
+#corona h3{
+    color: white;
+    margin-top: 10px;
+}
