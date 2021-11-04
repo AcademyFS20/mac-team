@@ -112,7 +112,7 @@
         height: fit-content;
     }
 }
-@media screen and (min-width: 425px) and (max-width: 1023px){
+@media screen and (min-width: 426px) and (max-width: 1024px){
     footer .footer .parag{
         font-size: 16px;
         margin-right: 30px;
@@ -143,6 +143,11 @@
 
     
 } 
+@media screen and (min-width: 1025px) and (max-width: 1443px){
+    .total-cases, .total-death, .total-recovery, .date{
+        width: 40%;
+    }
+}
 
 
 @media screen and (min-width: 426px) and (max-width: 768px){
