@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', async() => {
     })
     
 
-    const ctx = document.getElementById('myChart').getContext('2d');
+    const ctx = document.getElementById('myChart1').getContext('2d');
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
