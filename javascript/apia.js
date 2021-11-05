@@ -24,15 +24,23 @@ window.addEventListener('DOMContentLoaded', async() => {
 
     });
 
+
     const sliced = pays.slice(600, 608)
 
-    console.log(sliced)
+    function dateFormat(array){
+        return array.splice(0, 8, 23, 24, 25, 26, 27, 28, 29, 30)
+    }
+    
+    dateFormat(sliced)
+
+
 
     const cases = data.map((item) => {
 
         return item.Cases;
 
     });
+
 
     const slicedCases = cases.slice(600, 608);
     
