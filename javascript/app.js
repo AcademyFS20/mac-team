@@ -219,69 +219,42 @@ quizButtons.addEventListener("click", () => {
     let btns = document.querySelector(".questions");
     btns.classList.remove("questions");
     let bts = document.querySelector(".bts");
-    let currentIndex = 0;
     let qsts = document.querySelector(".les_qsts");
     qsts.classList.remove("start");
+    let currentIndex = 0;
 
 
     bts.addEventListener("click", () => {
+        
 
-        console.log(currentIndex);
-        //quizPage.classList.remove("informations");
-        //quizPage.replaceChildren(".questionv2")
-        //questionCounter++;
         const div = document.querySelector('.questionv2');
-
         div.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-        const newTest = document.createElement("p");
         questionCounter++;
+        let element = document.createElement("h1");
+        element.setAttribute("id", "text_qsts");
+        element.setAttribute('data-id',Math.floor(Math.random()*100));
         Questions.forEach((item, index) => {
 
             if (currentIndex === index) {
-                let element = document.createElement("h1");
+               
                 element.innerHTML = `<span>${item.question}</span>`
-                element.setAttribute("id", "text_qsts");
-
-                const el = document.querySelector('.infotext');
-
-                qsts.replaceChild(el, element);
-
-                console.log('byn');
-
+                 qsts.appendChild(element);
             }
 
+
+          
+        });
+     
+        const elements = document.querySelectorAll('#text_qsts');
+        elements.forEach((item,index) => {
+            if(index !== currentIndex) {
+                qsts.replaceChild(element,item);
+            }
+           
         })
-
-
         currentIndex++;
 
     });
-
-
-    //availableQuestions.splice(index, 1)
-
-
-
-
-
-
-
-
-
-
-
-    //const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
-    //console.log(currentQuestion)
-    //console.log(question)
-    //question.innerText = currentQuestion
-    //console.log(currentQuestion);
-
-
-
-
-
-    //acceptingAnswers = true
-
-
-
+       
 });
+
