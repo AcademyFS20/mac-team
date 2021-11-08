@@ -2,6 +2,7 @@ const quizPage = document.querySelector(".s-informations");
 const quizButtons = document.querySelector(".demarrer");
 quizButtons.addEventListener("click" , () => {
 let bts = document.querySelector(".bts");
+let btp = document.querySelector(".btp");
 let quizstart = document.querySelector("#infos");
 let currentIndex = 0;
 let point = document.querySelector("#les_infos");
@@ -17,7 +18,6 @@ let informations = document.querySelector(".informations");
 informations.classList.add("start");
 let qsts = document.querySelector(".les_qsts");
 qsts.classList.remove("start");
-
 function getJson(){
     let request = new XMLHttpRequest();
     request.onreadystatechange = function(){
@@ -25,12 +25,22 @@ function getJson(){
             let jsoNQuestions = JSON.parse(this.responseText);
             let qCount = jsoNQuestions.length;
             addQuestionData(jsoNQuestions[currentIndex], qCount);
+
             bts.addEventListener("click", () =>{
+                if(currentIndex < qCount){
                 let theRightAnswer = jsoNQuestions[currentIndex].ranswer;
-                console.log(theRightAnswer);
+               // console.log(theRightAnswer);
+            }
                 currentIndex++;
                 qsts.innerHTML = "";
                 addQuestionData(jsoNQuestions[currentIndex], qCount);
+            });
+            btp.addEventListener("click", () =>{
+                let theRightAnswer = jsoNQuestions[currentIndex].ranswer;
+                console.log(theRightAnswer);
+                currentIndex--;
+                qsts.innerHTML = "";
+                addQuestionData(jsoNQuestions[currentIndex] ,qCount);
             });
         }
     };
@@ -39,26 +49,44 @@ function getJson(){
 }
 getJson();
 function addQuestionData(obj, count){
+    if(currentIndex < count){
     let h1 = document.createElement("h1");
     let questionText = document.createTextNode(obj['question']);
     h1.appendChild(questionText);
     h1.setAttribute("id", "text_qsts");
     qsts.appendChild(h1);
-    for(let i = 1; i <= 2; i++){
+    for(let i = 1; i < 3; i++){
+
         let mainDiv = document.createElement("div");
         mainDiv.setAttribute("id", "inpt");
         let radioInput = document.createElement("input");
         radioInput.name = "question";
         radioInput.type = "radio";
-        radioInput.id = `answer_${i}`;
-        radioInput.dataset.answer = obj[`answer_${i}`];
+        radioInput.id = String(`answer_${i}`);
+        radioInput.dataset.answer = obj.choice[i - 1]
+        radioInput.value= obj.choice[i - 1]
         let label = document.createElement("label");
         label.htmlFor = `answer_${i}`;
-        let labelText = document.createTextNode(obj[`choice${i}`]);
+        let labelText = document.createTextNode(obj.choice[i - 1]);
         label.appendChild(labelText);
         mainDiv.appendChild(radioInput);
         mainDiv.appendChild(label);
         qsts.appendChild(mainDiv);
+       
+
+
+
+    }  
+
+      const el = document.querySelectorAll("input[type=radio]")
+      el.forEach(element =>{
+          if(element.value === "oui"){
+          console.log("you check oui")
+          }
+      })
+}
+else{
+    bts.classList.add("start");
 }
 }
 });

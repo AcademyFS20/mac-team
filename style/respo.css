@@ -111,6 +111,108 @@
     #corona{
         height: fit-content;
     }
+    .safety {
+        width: 100%;
+        height: 1500px;
+    }
+    .safety-grid {
+        width: 425px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .grid-pos {
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+    }
+    .s-grid1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .s-grid2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .s-grid3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .s-grid4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+    .s-grid5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .s-grid6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        grid-area: 3 / 2 / 4 / 3;
+    }
+    .s-grid7 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        color: rgb(0, 119, 176);
+    }
+    .information {
+        height: 600px;
+    }
+    .left-info {
+        width: auto;
+        height: auto;
+        margin-left: 0;
+        padding-top: 95px;
+    }
+    .div-information {
+        flex-direction: column;
+    }
+    .links {
+        flex-direction: column;
+    }
 }
 @media screen and (min-width: 426px) and (max-width: 1024px){
     footer .footer .parag{
@@ -173,5 +275,4 @@
         font-size: 28px;
     }
 }
-
 
