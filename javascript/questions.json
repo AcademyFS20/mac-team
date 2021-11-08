@@ -5,8 +5,7 @@
         "oui",
         "non"
     ],
-    "choice2": "non",
-    "ranswer": "oui"
+    "id": "fever"
 },
 {
     "question": "Avez-vous une toux ou une augmentation de votre toux habituelle ces derniers jours ?",
@@ -14,8 +13,7 @@
         "oui",
         "non"
     ],
-    "choice2": "non",
-    "ranswer": "oui"
+    "id": "toux"
 },
 {
     "question": "Avez-vous des douleurs musculaires ou des courbatures inhabituelles ces derniers jours ?",
@@ -23,7 +21,6 @@
         "oui",
         "non"
     ],
-    "choice2": "non",
     "ranswer": "oui"
 },
 {
@@ -32,8 +29,7 @@
         "oui",
         "non"
     ],
-    "choice2": "non",
-    "ranswer": "oui"
+    "id": "gorge"
 },
 {
     "question": "Avez-vous de la diarrhée ces dernières 24 heures (au moins 3 selles molles) ?",
@@ -41,7 +37,6 @@
         "oui",
         "non"
     ],
-    "choice2": "non",
     "ranswer": "oui"
 },
 {
@@ -50,7 +45,6 @@
         "oui",
         "non"
     ],
-    "choice2": "non",
     "ranswer": "oui"
 },
 {
@@ -59,7 +53,6 @@
         "oui",
         "non"
     ],
-    "choice2": "non",
     "ranswer": "oui"
 }
 ]
