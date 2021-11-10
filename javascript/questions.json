@@ -21,7 +21,7 @@
         "oui",
         "non"
     ],
-    "ranswer": "oui"
+    "id": "courbatures"
 },
 {
     "question": "Avez-vous un mal de gorge apparu ces derniers jours ?",
@@ -37,7 +37,7 @@
         "oui",
         "non"
     ],
-    "ranswer": "oui"
+    "id": "diarrhe"
 },
 {
     "question": "Avez-vous une fatigue inhabituelle ces derniers jours ?",
@@ -45,7 +45,7 @@
         "oui",
         "non"
     ],
-    "ranswer": "oui"
+    "id": "fatigue"
 },
 {
     "question": "Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?",
@@ -53,6 +53,78 @@
         "oui",
         "non"
     ],
-    "ranswer": "oui"
+    "id": "boire"
+},
+{
+    "question": "Avez-vous de l’hypertension artérielle ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "hypertension"
+},
+{
+    "question": "Êtes-vous diabétique  ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "diabetique"
+},
+{
+    "question": "Avez-vous ou avez-vous eu un cancer  ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "cancer"
+},
+{
+    "question": "Avez-vous une maladie respiratoire ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "respiratoire"
+},
+{
+    "question": "Avez-vous une insuffisance rénale chronique dialysée ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "dialyse"
+},
+{
+    "question": "Avez-vous une maladie chronique du foie ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "chronique"
+},
+{
+    "question": "Êtes-vous enceinte ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "enceinte"
+},
+{
+    "question": "Avez-vous une maladie connue pour diminuer vos défenses immunitaires ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "immunitaires"
+},
+{
+    "question": "Prenez-vous un traitement immunosuppresseur ?",
+    "choice": [
+        "oui",
+        "non"
+    ],
+    "id": "immunosuppresseur"
 }
 ]
